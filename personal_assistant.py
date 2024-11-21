@@ -6,6 +6,7 @@ from notes import notes_menu
 from tasks import tasks_menu
 from contacts import contacts_menu
 from finance import finance_menu
+from calculator import calculator_menu
 
 def main_menu():
     while True:
@@ -26,6 +27,8 @@ def main_menu():
             contacts_menu()
         elif choice == '4':
             finance_menu()
+        elif choice == '5':
+            calculator_menu()
         elif choice == '6':
             print('До свидания!')
             break
