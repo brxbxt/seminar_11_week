@@ -4,6 +4,7 @@ import datetime
 import csv
 from notes import notes_menu
 from tasks import tasks_menu
+from contacts import contacts_menu
 
 def main_menu():
     while True:
@@ -20,6 +21,8 @@ def main_menu():
             notes_menu()
         elif choice == '2':
             tasks_menu()
+        elif choice == '3':
+            contacts_menu()
         elif choice == '6':
             print('До свидания!')
             break
