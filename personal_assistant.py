@@ -2,6 +2,7 @@ import os
 import json
 import datetime
 import csv
+from notes import notes_menu
 
 def main_menu():
     while True:
@@ -14,6 +15,13 @@ def main_menu():
         print('5. Калькулятор')
         print('6. Выход')
         choice = input('Введите номер действия: ')
+        if choice == '1':
+            notes_menu()
+        elif choice == '6':
+            print('До свидания!')
+            break
+        else:
+            print('Некорректный выбор. Попробуйте снова.')
 
 if __name__ == '__main__':
     main_menu()
