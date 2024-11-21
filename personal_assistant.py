@@ -3,6 +3,7 @@ import json
 import datetime
 import csv
 from notes import notes_menu
+from tasks import tasks_menu
 
 def main_menu():
     while True:
@@ -17,6 +18,8 @@ def main_menu():
         choice = input('Введите номер действия: ')
         if choice == '1':
             notes_menu()
+        elif choice == '2':
+            tasks_menu()
         elif choice == '6':
             print('До свидания!')
             break
